@@ -221,6 +221,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X6c-EP-yYk">
+                                <rect key="frame" x="20" y="818" width="353" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JoA-nz-msm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -229,12 +232,15 @@
                             <constraint firstItem="Tvy-g4-Q03" firstAttribute="leading" secondItem="JoA-nz-msm" secondAttribute="leading" constant="20" id="58R-Yw-ACT"/>
                             <constraint firstItem="B8W-3K-RIf" firstAttribute="centerY" secondItem="gxz-Ba-5Hx" secondAttribute="centerY" id="8iA-84-dj1"/>
                             <constraint firstItem="JoA-nz-msm" firstAttribute="trailing" secondItem="Tvy-g4-Q03" secondAttribute="trailing" constant="20" id="D4F-Y2-z0w"/>
+                            <constraint firstItem="JoA-nz-msm" firstAttribute="bottom" secondItem="X6c-EP-yYk" secondAttribute="bottom" constant="20" id="K0V-VL-IkV"/>
                             <constraint firstItem="22g-5h-LS0" firstAttribute="leading" secondItem="JoA-nz-msm" secondAttribute="leading" constant="20" id="LDW-Ia-NMK"/>
                             <constraint firstItem="JoA-nz-msm" firstAttribute="trailing" secondItem="bHB-oX-HVk" secondAttribute="trailing" constant="20" id="Ppf-Qw-iXG"/>
                             <constraint firstItem="Tvy-g4-Q03" firstAttribute="centerY" secondItem="gxz-Ba-5Hx" secondAttribute="centerY" id="Um3-5V-els"/>
                             <constraint firstItem="B8W-3K-RIf" firstAttribute="leading" secondItem="JoA-nz-msm" secondAttribute="leading" constant="20" id="WuH-8D-IzQ"/>
                             <constraint firstItem="bHB-oX-HVk" firstAttribute="leading" secondItem="JoA-nz-msm" secondAttribute="leading" constant="20" id="afM-NP-NHm"/>
+                            <constraint firstItem="JoA-nz-msm" firstAttribute="trailing" secondItem="X6c-EP-yYk" secondAttribute="trailing" constant="20" id="kVD-8d-73D"/>
                             <constraint firstItem="JoA-nz-msm" firstAttribute="trailing" secondItem="22g-5h-LS0" secondAttribute="trailing" constant="20" id="mg8-Oa-Eg9"/>
+                            <constraint firstItem="X6c-EP-yYk" firstAttribute="leading" secondItem="JoA-nz-msm" secondAttribute="leading" constant="20" id="n98-um-TC5"/>
                             <constraint firstItem="22g-5h-LS0" firstAttribute="centerY" secondItem="gxz-Ba-5Hx" secondAttribute="centerY" id="uE6-Bf-WgJ"/>
                             <constraint firstItem="bHB-oX-HVk" firstAttribute="top" secondItem="JoA-nz-msm" secondAttribute="top" constant="20" id="xSG-aS-r3T"/>
                         </constraints>
