@@ -81,18 +81,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="4"/>
+            <point key="canvasLocation" x="63" y="4"/>
         </scene>
-        <!--Quiz View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="vIx-ad-Fdn">
             <objects>
-                <viewController id="M3J-ne-VFg" userLabel="Quiz View Controller" sceneMemberID="viewController">
+                <viewController id="M3J-ne-VFg" userLabel="Question View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gxz-Ba-5Hx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="JoA-nz-msm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="CIe-qA-925" kind="show" identifier="Results" id="DeY-Sa-bZ0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5N-rf-1im" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,15 +106,16 @@
             <objects>
                 <viewController id="CIe-qA-925" userLabel="Results View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="phG-Md-0oQ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="f7X-wC-taV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KAv-ta-Qmm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLF-WH-8Uu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473" y="4"/>
+            <point key="canvasLocation" x="1550" y="4"/>
         </scene>
     </scenes>
     <resources>
