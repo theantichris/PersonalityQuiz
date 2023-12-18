@@ -185,22 +185,50 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="B8W-3K-RIf" userLabel="Range Question">
+                                <rect key="frame" x="20" y="358.66666666666669" width="353" height="124.66666666666669"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FVm-ZW-zDb">
+                                        <rect key="frame" x="-2" y="0.0" width="357" height="31"/>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="132" translatesAutoresizingMaskIntoConstraints="NO" id="egu-kQ-Tsa">
+                                        <rect key="frame" x="0.0" y="50" width="353" height="20.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnJ-e6-7MI">
+                                                <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEo-3M-pSo">
+                                                <rect key="frame" x="311.66666666666669" y="0.0" width="41.333333333333314" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlv-aK-Hc0">
+                                        <rect key="frame" x="0.0" y="90.333333333333314" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JoA-nz-msm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="JoA-nz-msm" firstAttribute="trailing" secondItem="B8W-3K-RIf" secondAttribute="trailing" constant="20" id="1L3-Lm-UWL"/>
                             <constraint firstItem="Tvy-g4-Q03" firstAttribute="leading" secondItem="JoA-nz-msm" secondAttribute="leading" constant="20" id="58R-Yw-ACT"/>
+                            <constraint firstItem="B8W-3K-RIf" firstAttribute="centerY" secondItem="gxz-Ba-5Hx" secondAttribute="centerY" id="8iA-84-dj1"/>
                             <constraint firstItem="JoA-nz-msm" firstAttribute="trailing" secondItem="Tvy-g4-Q03" secondAttribute="trailing" constant="20" id="D4F-Y2-z0w"/>
                             <constraint firstItem="22g-5h-LS0" firstAttribute="leading" secondItem="JoA-nz-msm" secondAttribute="leading" constant="20" id="LDW-Ia-NMK"/>
                             <constraint firstItem="Tvy-g4-Q03" firstAttribute="centerY" secondItem="gxz-Ba-5Hx" secondAttribute="centerY" id="Um3-5V-els"/>
+                            <constraint firstItem="B8W-3K-RIf" firstAttribute="leading" secondItem="JoA-nz-msm" secondAttribute="leading" constant="20" id="WuH-8D-IzQ"/>
                             <constraint firstItem="JoA-nz-msm" firstAttribute="trailing" secondItem="22g-5h-LS0" secondAttribute="trailing" constant="20" id="mg8-Oa-Eg9"/>
                             <constraint firstItem="22g-5h-LS0" firstAttribute="centerY" secondItem="gxz-Ba-5Hx" secondAttribute="centerY" id="uE6-Bf-WgJ"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="22g-5h-LS0"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="CH5-Gb-SdE"/>
                     <connections>
