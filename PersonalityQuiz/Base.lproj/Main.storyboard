@@ -185,7 +185,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="B8W-3K-RIf" userLabel="Range Question">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="B8W-3K-RIf" userLabel="Ranged Question">
                                 <rect key="frame" x="20" y="358.66666666666669" width="353" height="124.66666666666669"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FVm-ZW-zDb">
@@ -247,6 +247,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="CH5-Gb-SdE"/>
                     <connections>
+                        <outlet property="multipleAnswerStackView" destination="Tvy-g4-Q03" id="QRn-4y-9Ow"/>
+                        <outlet property="rangedAnswerStackView" destination="B8W-3K-RIf" id="AbT-0x-Haf"/>
+                        <outlet property="singleAnswerStackView" destination="22g-5h-LS0" id="0XI-4g-XzA"/>
                         <segue destination="CIe-qA-925" kind="show" identifier="Results" id="DeY-Sa-bZ0"/>
                     </connections>
                 </viewController>

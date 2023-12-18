@@ -42,12 +42,36 @@ class QuestionViewController: UIViewController {
         ),
     ]
     
+    var questionIndex = 0
+    
+    @IBOutlet var singleAnswerStackView: UIStackView!
+    @IBOutlet var multipleAnswerStackView: UIStackView!
+    @IBOutlet var rangedAnswerStackView: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        updateUI()
     }
     
+    func updateUI() {
+        singleAnswerStackView.isHidden = true
+        multipleAnswerStackView.isHidden = true
+        rangedAnswerStackView.isHidden = true
+        
+        navigationItem.title = "Question #\(questionIndex + 1)"
+        
+        let currentQuestion = questions[questionIndex]
+        
+        switch currentQuestion.type {
+        case .single:
+            singleAnswerStackView.isHidden = false
+        case .multiple:
+            multipleAnswerStackView.isHidden = false
+        case.ranged:
+            rangedAnswerStackView.isHidden = false
+        }
+    }
 
     /*
     // MARK: - Navigation
