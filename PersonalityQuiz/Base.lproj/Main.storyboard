@@ -31,6 +31,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Begin Personality Quiz">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Mew-BH-y5P" kind="presentation" id="vPH-kI-BUp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -88,18 +91,19 @@
             <objects>
                 <viewController id="M3J-ne-VFg" userLabel="Question View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gxz-Ba-5Hx">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="JoA-nz-msm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CH5-Gb-SdE"/>
                     <connections>
                         <segue destination="CIe-qA-925" kind="show" identifier="Results" id="DeY-Sa-bZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5N-rf-1im" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="4"/>
+            <point key="canvasLocation" x="1730.534351145038" y="3.5211267605633805"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="gzg-Fw-lZc">
@@ -115,7 +119,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLF-WH-8Uu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1550" y="4"/>
+            <point key="canvasLocation" x="2475.5725190839694" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c0Z-oU-Kpy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mew-BH-y5P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w9f-A6-FWl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="M3J-ne-VFg" kind="relationship" relationship="rootViewController" id="RKG-Ni-RFk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBT-rP-kVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803.81679389312978" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
