@@ -258,8 +258,8 @@
                         <outlet property="questionLabel" destination="bHB-oX-HVk" id="kUu-NZ-Sby"/>
                         <outlet property="questionProgressView" destination="X6c-EP-yYk" id="iCn-wG-WQh"/>
                         <outlet property="rangedAnswerStackView" destination="B8W-3K-RIf" id="AbT-0x-Haf"/>
+                        <outlet property="rangedLabel1" destination="OnJ-e6-7MI" id="C4e-XL-tEg"/>
                         <outlet property="rangedLabel2" destination="EEo-3M-pSo" id="woC-Gb-8zd"/>
-                        <outlet property="rangedLable1" destination="OnJ-e6-7MI" id="C4e-XL-tEg"/>
                         <outlet property="singleAnswerStackView" destination="22g-5h-LS0" id="0XI-4g-XzA"/>
                         <outlet property="singleButton1" destination="IGp-1A-Oh0" id="jJh-F7-weV"/>
                         <outlet property="singleButton2" destination="EE8-lm-SGb" id="0ph-i9-3ag"/>

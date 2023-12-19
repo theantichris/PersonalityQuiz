@@ -59,7 +59,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet var multipleLabel4: UILabel!
     
     @IBOutlet var rangedAnswerStackView: UIStackView!
-    @IBOutlet var rangedLable1: UILabel!
+    @IBOutlet var rangedLabel1: UILabel!
     @IBOutlet var rangedLabel2: UILabel!
     
     @IBOutlet var questionProgressView: UIProgressView!
@@ -89,7 +89,7 @@ class QuestionViewController: UIViewController {
         case .multiple:
             updateMultipleSack(using: currentAnswers)
         case.ranged:
-            rangedAnswerStackView.isHidden = false
+            updateRangedStack(using: currentAnswers)
         }
     }
     
@@ -109,6 +109,13 @@ class QuestionViewController: UIViewController {
         multipleLabel2.text = answers[1].text
         multipleLabel3.text = answers[2].text
         multipleLabel4.text = answers[3].text
+    }
+    
+    func updateRangedStack(using answers: [Answer]) {
+        rangedAnswerStackView.isHidden = false
+        
+        rangedLabel1.text = answers.first?.text
+        rangedLabel2.text = answers.last?.text
     }
     
     /*
