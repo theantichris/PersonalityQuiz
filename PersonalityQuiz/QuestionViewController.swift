@@ -44,9 +44,25 @@ class QuestionViewController: UIViewController {
     
     var questionIndex = 0
     
+    @IBOutlet var questionLabel: UILabel!
+    
     @IBOutlet var singleAnswerStackView: UIStackView!
+    @IBOutlet var singleButton1: UIButton!
+    @IBOutlet var singleButton2: UIButton!
+    @IBOutlet var singleButton3: UIButton!
+    @IBOutlet var singleButton4: UIButton!
+    
     @IBOutlet var multipleAnswerStackView: UIStackView!
+    @IBOutlet var multipleLabel1: UILabel!
+    @IBOutlet var multipleLabel2: UILabel!
+    @IBOutlet var multipleLabel3: UILabel!
+    @IBOutlet var multipleLabel4: UILabel!
+    
     @IBOutlet var rangedAnswerStackView: UIStackView!
+    @IBOutlet var rangedLable1: UILabel!
+    @IBOutlet var rangedLabel2: UILabel!
+    
+    @IBOutlet var questionProgressView: UIProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,20 +75,42 @@ class QuestionViewController: UIViewController {
         multipleAnswerStackView.isHidden = true
         rangedAnswerStackView.isHidden = true
         
-        navigationItem.title = "Question #\(questionIndex + 1)"
-        
         let currentQuestion = questions[questionIndex]
+        let currentAnswers = currentQuestion.answers
+        let totalProgress = Float(questionIndex) / Float(questions.count)
+        
+        navigationItem.title = "Question #\(questionIndex + 1)"
+        questionLabel.text = currentQuestion.text
+        questionProgressView.setProgress(totalProgress, animated: true)
         
         switch currentQuestion.type {
         case .single:
-            singleAnswerStackView.isHidden = false
+            updateSingleStack(using: currentAnswers)
         case .multiple:
-            multipleAnswerStackView.isHidden = false
+            updateMultipleSack(using: currentAnswers)
         case.ranged:
             rangedAnswerStackView.isHidden = false
         }
     }
-
+    
+    func updateSingleStack(using answers: [Answer]) {
+        singleAnswerStackView.isHidden = false
+        
+        singleButton1.setTitle(answers[0].text, for: .normal)
+        singleButton2.setTitle(answers[1].text, for: .normal)
+        singleButton3.setTitle(answers[2].text, for: .normal)
+        singleButton4.setTitle(answers[3].text, for: .normal)
+    }
+    
+    func updateMultipleSack(using answers: [Answer]) {
+        multipleAnswerStackView.isHidden = false
+        
+        multipleLabel1.text = answers[0].text
+        multipleLabel2.text = answers[1].text
+        multipleLabel3.text = answers[2].text
+        multipleLabel4.text = answers[3].text
+    }
+    
     /*
     // MARK: - Navigation
 

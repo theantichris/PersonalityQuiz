@@ -182,6 +182,9 @@
                                         <rect key="frame" x="0.0" y="204" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="M3J-ne-VFg" eventType="touchUpInside" id="nX8-8a-uuu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -248,8 +251,20 @@
                     <navigationItem key="navigationItem" id="CH5-Gb-SdE"/>
                     <connections>
                         <outlet property="multipleAnswerStackView" destination="Tvy-g4-Q03" id="QRn-4y-9Ow"/>
+                        <outlet property="multipleLabel1" destination="4Yr-D6-Gd0" id="oLJ-dF-cnW"/>
+                        <outlet property="multipleLabel2" destination="HJa-BA-km9" id="HBv-6E-yuP"/>
+                        <outlet property="multipleLabel3" destination="PAj-fl-rql" id="0E5-Ej-Khg"/>
+                        <outlet property="multipleLabel4" destination="1NT-36-Jgq" id="Uhr-YA-0Zb"/>
+                        <outlet property="questionLabel" destination="bHB-oX-HVk" id="kUu-NZ-Sby"/>
+                        <outlet property="questionProgressView" destination="X6c-EP-yYk" id="iCn-wG-WQh"/>
                         <outlet property="rangedAnswerStackView" destination="B8W-3K-RIf" id="AbT-0x-Haf"/>
+                        <outlet property="rangedLabel2" destination="EEo-3M-pSo" id="woC-Gb-8zd"/>
+                        <outlet property="rangedLable1" destination="OnJ-e6-7MI" id="C4e-XL-tEg"/>
                         <outlet property="singleAnswerStackView" destination="22g-5h-LS0" id="0XI-4g-XzA"/>
+                        <outlet property="singleButton1" destination="IGp-1A-Oh0" id="jJh-F7-weV"/>
+                        <outlet property="singleButton2" destination="EE8-lm-SGb" id="0ph-i9-3ag"/>
+                        <outlet property="singleButton3" destination="QKl-fU-wL2" id="3V4-wu-zTn"/>
+                        <outlet property="singleButton4" destination="alu-QA-XRD" id="3GR-vO-4qc"/>
                         <segue destination="CIe-qA-925" kind="show" identifier="Results" id="DeY-Sa-bZ0"/>
                     </connections>
                 </viewController>
