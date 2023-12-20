@@ -44,6 +44,9 @@ class QuestionViewController: UIViewController {
     
     var questionIndex = 0
     
+    var currentAnswers: [Answer] = []
+    var answersChosen: [Answer] = []
+    
     @IBOutlet var questionLabel: UILabel!
     
     @IBOutlet var singleAnswerStackView: UIStackView!
@@ -57,6 +60,11 @@ class QuestionViewController: UIViewController {
     @IBOutlet var multipleLabel2: UILabel!
     @IBOutlet var multipleLabel3: UILabel!
     @IBOutlet var multipleLabel4: UILabel!
+    
+    @IBOutlet var multipleSwitch1: UISwitch!
+    @IBOutlet var multipleSwitch2: UISwitch!
+    @IBOutlet var multipleSwitch3: UISwitch!
+    @IBOutlet var multipleSwitch4: UISwitch!
     
     @IBOutlet var rangedAnswerStackView: UIStackView!
     @IBOutlet var rangedLabel1: UILabel!
@@ -76,7 +84,7 @@ class QuestionViewController: UIViewController {
         rangedAnswerStackView.isHidden = true
         
         let currentQuestion = questions[questionIndex]
-        let currentAnswers = currentQuestion.answers
+        currentAnswers = currentQuestion.answers
         let totalProgress = Float(questionIndex) / Float(questions.count)
         
         navigationItem.title = "Question #\(questionIndex + 1)"
@@ -117,4 +125,43 @@ class QuestionViewController: UIViewController {
         rangedLabel1.text = answers.first?.text
         rangedLabel2.text = answers.last?.text
     }
+    
+    @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
+        switch sender {
+        case singleButton1:
+            answersChosen.append(currentAnswers[0])
+        case singleButton2:
+            answersChosen.append(currentAnswers[1])
+        case singleButton3:
+            answersChosen.append(currentAnswers[2])
+        case singleButton4:
+            answersChosen.append(currentAnswers[3])
+        default:
+            break
+        }
+        
+        nextQuestion()
+    }
+    
+    @IBAction func multipleAnswerButtonPressed() {
+        if multipleSwitch1.isOn {
+            answersChosen.append(currentAnswers[0])
+        }
+        
+        if multipleSwitch2.isOn {
+            answersChosen.append(currentAnswers[1])
+        }
+        
+        if multipleSwitch3.isOn {
+            answersChosen.append(currentAnswers[2])
+        }
+        
+        if multipleSwitch4.isOn {
+            answersChosen.append(currentAnswers[3])
+        }
+        
+        nextQuestion()
+    }
+    
+    func nextQuestion() {}
 }
