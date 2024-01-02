@@ -114,6 +114,11 @@ class QuestionViewController: UIViewController {
     func updateMultipleSack(using answers: [Answer]) {
         multipleAnswerStackView.isHidden = false
         
+        multipleSwitch1.isOn = false
+        multipleSwitch2.isOn = false
+        multipleSwitch3.isOn = false
+        multipleSwitch4.isOn = false
+        
         multipleLabel1.text = answers[0].text
         multipleLabel2.text = answers[1].text
         multipleLabel3.text = answers[2].text
@@ -122,6 +127,8 @@ class QuestionViewController: UIViewController {
     
     func updateRangedStack(using answers: [Answer]) {
         rangedAnswerStackView.isHidden = false
+        
+        rangedSlider.setValue(0.5, animated: false)
         
         rangedLabel1.text = answers.first?.text
         rangedLabel2.text = answers.last?.text
