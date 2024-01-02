@@ -66,6 +66,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet var multipleSwitch3: UISwitch!
     @IBOutlet var multipleSwitch4: UISwitch!
     
+    @IBOutlet var rangedSlider: UISlider!
     @IBOutlet var rangedAnswerStackView: UIStackView!
     @IBOutlet var rangedLabel1: UILabel!
     @IBOutlet var rangedLabel2: UILabel!
@@ -159,6 +160,14 @@ class QuestionViewController: UIViewController {
         if multipleSwitch4.isOn {
             answersChosen.append(currentAnswers[3])
         }
+        
+        nextQuestion()
+    }
+    
+    @IBAction func rangedAnswerButtonPressed() {
+        let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
+        
+        answersChosen.append(currentAnswers[index])
         
         nextQuestion()
     }

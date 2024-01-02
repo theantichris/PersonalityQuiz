@@ -228,6 +228,9 @@
                                         <rect key="frame" x="0.0" y="90.333333333333314" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="M3J-ne-VFg" eventType="touchUpInside" id="lYB-jX-UfO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -260,6 +263,12 @@
                             <constraint firstItem="22g-5h-LS0" firstAttribute="centerY" secondItem="gxz-Ba-5Hx" secondAttribute="centerY" id="uE6-Bf-WgJ"/>
                             <constraint firstItem="bHB-oX-HVk" firstAttribute="top" secondItem="JoA-nz-msm" secondAttribute="top" constant="20" id="xSG-aS-r3T"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="22g-5h-LS0"/>
+                                <exclude reference="Tvy-g4-Q03"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="CH5-Gb-SdE"/>
                     <connections>
@@ -277,6 +286,7 @@
                         <outlet property="rangedAnswerStackView" destination="B8W-3K-RIf" id="AbT-0x-Haf"/>
                         <outlet property="rangedLabel1" destination="OnJ-e6-7MI" id="C4e-XL-tEg"/>
                         <outlet property="rangedLabel2" destination="EEo-3M-pSo" id="woC-Gb-8zd"/>
+                        <outlet property="rangedSlider" destination="FVm-ZW-zDb" id="rJo-Ic-kz9"/>
                         <outlet property="singleAnswerStackView" destination="22g-5h-LS0" id="0XI-4g-XzA"/>
                         <outlet property="singleButton1" destination="IGp-1A-Oh0" id="jJh-F7-weV"/>
                         <outlet property="singleButton2" destination="EE8-lm-SGb" id="0ph-i9-3ag"/>
