@@ -188,4 +188,8 @@ class QuestionViewController: UIViewController {
             performSegue(withIdentifier: "Results", sender: nil)
         }
     }
+    
+    @IBSegueAction func showResults(_ coder: NSCoder) -> ResultsViewController? {
+        return ResultsViewController(coder: coder, responses: answersChosen)
+    }
 }
