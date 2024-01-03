@@ -28,6 +28,8 @@ class ResultsViewController: UIViewController {
         super.viewDidLoad()
         
         calculatePersonalityResult()
+        
+        navigationItem.hidesBackButton = true
     }
     
     func calculatePersonalityResult() {
