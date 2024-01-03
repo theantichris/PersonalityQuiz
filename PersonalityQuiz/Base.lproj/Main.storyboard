@@ -329,6 +329,10 @@
                     <navigationItem key="navigationItem" title="Results" id="KAv-ta-Qmm">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="mdU-oe-AP0"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="xdZ-Wv-BTb" id="FTu-LK-1eY"/>
+                        <outlet property="resultDefinitionLabel" destination="Z1c-1g-xHR" id="3Qg-0X-esb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLF-WH-8Uu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
