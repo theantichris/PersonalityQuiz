@@ -195,7 +195,6 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="M3J-ne-VFg" eventType="touchUpInside" id="nX8-8a-uuu"/>
                                             <action selector="multipleAnswerButtonPressed" destination="M3J-ne-VFg" eventType="touchUpInside" id="Eta-Ar-FdF"/>
                                         </connections>
                                     </button>
@@ -286,7 +285,7 @@
                         <outlet property="singleButton2" destination="EE8-lm-SGb" id="0ph-i9-3ag"/>
                         <outlet property="singleButton3" destination="QKl-fU-wL2" id="3V4-wu-zTn"/>
                         <outlet property="singleButton4" destination="alu-QA-XRD" id="3GR-vO-4qc"/>
-                        <segue destination="CIe-qA-925" kind="show" identifier="Results" id="DeY-Sa-bZ0"/>
+                        <segue destination="CIe-qA-925" kind="show" identifier="Results" destinationCreationSelector="showResults:" id="DeY-Sa-bZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5N-rf-1im" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
